@@ -1,0 +1,9 @@
+main WARN - This is a log message from the helloappLogger.childLogger
+main ERROR - This is a log message from the helloappLogger.childLogger
+main FATAL - This is a log message from the helloappLogger.childLogger
+main WARN - This is a log message from the helloappLogger.childLogger
+main ERROR - This is a log message from the helloappLogger.childLogger
+main FATAL - This is a log message from the helloappLogger.childLogger
+main WARN - This is a log message from the helloappLogger.childLogger
+main ERROR - This is a log message from the helloappLogger.childLogger
+main FATAL - This is a log message from the helloappLogger.childLogger

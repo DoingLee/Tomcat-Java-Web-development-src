@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC
+  '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN'
+  'http://java.sun.com/j2ee/dtds/web-app_2_3.dtd'>
+
+<web-app>
+
+ <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>mypack.AddServlet</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/add</url-pattern>
+   </servlet-mapping>
+
+ <servlet>
+        <servlet-name>properties</servlet-name>
+        <servlet-class>mypack.PropertiesServlet</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+        <servlet-name>properties</servlet-name>
+        <url-pattern>/properties</url-pattern>
+   </servlet-mapping>
+
+<servlet>
+        <servlet-name>properties_1</servlet-name>
+        <servlet-class>mypack.PropertiesServlet_1</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+        <servlet-name>properties_1</servlet-name>
+        <url-pattern>/properties_1</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+        <servlet-name>loop</servlet-name>
+        <servlet-class>mypack.LoopServlet</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+        <servlet-name>loop</servlet-name>
+        <url-pattern>/loop</url-pattern>
+   </servlet-mapping>
+</web-app>

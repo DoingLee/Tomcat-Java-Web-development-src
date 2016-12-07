@@ -1,0 +1,9 @@
+<Context reloadable="true" >
+
+  <Resource name="mail/session" 
+            auth="Container"
+            type="javax.mail.Session"
+            mail.smtp.host="localhost"
+            mail.store.protocol="imap" />
+</Context>
+

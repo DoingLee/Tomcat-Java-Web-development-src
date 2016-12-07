@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC
+  '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN'
+  'http://java.sun.com/j2ee/dtds/web-app_2_3.dtd'>
+
+<web-app>
+
+
+
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/BookDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+
+</web-app>

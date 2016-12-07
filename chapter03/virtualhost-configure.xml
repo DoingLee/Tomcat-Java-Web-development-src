@@ -1,0 +1,9 @@
+<!-- configure virtual host. copy the following code into server.xml -->
+
+<Host name="www.mycompany1.com" appBase="C:\mycompany1" 
+unpackWARs="true" autoDeploy="true">
+<Alias>mycompany1.com</Alias>
+<Alias>mycompany1</Alias>
+
+</Host>
+

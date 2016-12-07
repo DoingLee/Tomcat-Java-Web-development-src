@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC
+  '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN'
+  'http://java.sun.com/j2ee/dtds/web-app_2_3.dtd'>
+
+<web-app>
+
+  <servlet>
+    <servlet-name>download</servlet-name>
+    <servlet-class>mypack.DownloadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>download</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>mypack.UploadServlet</servlet-class>
+    <init-param>
+      <param-name>filePath</param-name>
+      <param-value>store</param-value>
+    </init-param>
+    <init-param>
+      <param-name>tempFilePath</param-name>
+      <param-value>temp</param-value>
+    </init-param>
+
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>dirtester</servlet-name>
+    <servlet-class>mypack.DirTesterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>dirtester</servlet-name>
+    <url-pattern>/dirtester</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>hello1</servlet-name>
+    <servlet-class>mypack.HelloServlet1</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>hello1</servlet-name>
+    <url-pattern>/hello1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>hello2</servlet-name>
+    <servlet-class>mypack.HelloServlet2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>hello2</servlet-name>
+    <url-pattern>/hello2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>hello3</servlet-name>
+    <servlet-class>mypack.HelloServlet3</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>hello3</servlet-name>
+    <url-pattern>/hello3</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>adder1</servlet-name>
+    <servlet-class>mypack.AdderServlet1</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>adder1</servlet-name>
+    <url-pattern>/adder1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>adder2</servlet-name>
+    <servlet-class>mypack.AdderServlet2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>adder2</servlet-name>
+    <url-pattern>/adder2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>adder3</servlet-name>
+    <servlet-class>mypack.AdderServlet3</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>adder3</servlet-name>
+    <url-pattern>/adder3</url-pattern>
+  </servlet-mapping>
+ 
+
+  <servlet>
+    <servlet-name>chat</servlet-name>
+    <servlet-class>mypack.ChatServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>chat</servlet-name>
+    <url-pattern>/chat</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>check</servlet-name>
+    <servlet-class>mypack.CheckServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>output</servlet-name>
+    <servlet-class>mypack.OutputServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>output</servlet-name>
+    <url-pattern>/output</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>check1</servlet-name>
+    <servlet-class>mypack.Check1Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>check1</servlet-name>
+    <url-pattern>/check1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>output1</servlet-name>
+    <servlet-class>mypack.Output1Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>output1</servlet-name>
+    <url-pattern>/output1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>counter</servlet-name>
+    <servlet-class>mypack.CounterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>counter</servlet-name>
+    <url-pattern>/counter</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>image</servlet-name>
+    <servlet-class>mypack.ImageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  <servlet>
+    <servlet-name>cross</servlet-name>
+    <servlet-class>mypack.CrossServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>cross</servlet-name>
+    <url-pattern>/cross</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>cookie</servlet-name>
+    <servlet-class>mypack.CookieServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>cookie</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>cookie1</servlet-name>
+    <servlet-class>mypack.Cookie1Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>cookie1</servlet-name>
+    <url-pattern>/cookie1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>main</servlet-name>
+    <servlet-class>mypack.MainServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>main</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>greet</servlet-name>
+    <servlet-class>mypack.GreetServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>greet</servlet-name>
+    <url-pattern>/greet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>mypack.Servlet1</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servlet2</servlet-name>
+    <servlet-class>mypack.Servlet2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>servlet3</servlet-name>
+    <servlet-class>mypack.Servlet3</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet3</servlet-name>
+    <url-pattern>/servlet3</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>

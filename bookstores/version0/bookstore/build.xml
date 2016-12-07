@@ -1,0 +1,47 @@
+<project name="bookstore" default="about" basedir=".">
+
+  <target name="init">
+    <property name="build" value="build" />
+    <property name="src" value="src" />
+    <property environment="myenv" />
+    <property name="servletpath"  value="${myenv.CATALINA_HOME}/lib/servlet-api.jar" />
+    <property name="mysqlpath" value="WEB-INF/lib/mysqldriver.jar" />
+
+    <mkdir dir="${build}" />
+    <mkdir dir="${build}\WEB-INF" />
+    <mkdir dir="${build}\WEB-INF\classes" />
+
+    <copy todir="${build}" >
+      <fileset dir="${basedir}"    >
+        <include name="*.jsp" />
+        <include name="*.bmp" />
+        <include name="WEB-INF/**" />
+        <exclude name="build.xml" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="compile" depends="init">        
+    <javac srcdir="${src}"
+           destdir="${build}/WEB-INF/classes"
+           classpath="${servletpath}:${mysqlpath}">
+    </javac>
+  </target>
+ 
+  <target name="bookstorewar" depends="compile">        
+    <war warfile="${build}/bookstore.war" webxml="${build}/WEB-INF/web.xml">
+	<lib dir="${build}/WEB-INF/lib"/>
+	<classes dir="${build}/WEB-INF/classes"/>
+	<fileset dir="${build}"/>
+    </war> 
+  </target>
+
+  <target name="about" >
+    <echo> 
+	This build.xml file contains targets 
+        for building bookstore web application
+    </echo>
+  </target>
+
+</project>
+

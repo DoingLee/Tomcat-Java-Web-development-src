@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>今日新闻</title>
+</head>
+<body>
+<center><h1>今日新闻</h1></center><p>
+<!--#include file="news.txt" -->
+<!--#config timefmt="%Y年%m月%d日" -->
+<p>文件更新日期：<!--#flastmod file="news.txt" -->
+
+<!--#config sizefmt="bytes" -->
+<br>文件大小：<!--#fsize file="news.txt" -->字节
+
+</body>
+</html>

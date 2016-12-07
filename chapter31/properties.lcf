@@ -1,0 +1,23 @@
+## LOGGERS ##
+#configure root logger
+log4j.rootLogger=INFO,console
+#define a logger named helloAppLogger 
+log4j.logger.helloappLogger=WARN
+#define a second logger that is a child to helloAppLogger 
+log4j.logger.helloappLogger.childLogger=,file
+
+## APPENDERS ##
+# define an appender named console, which is set to be a ConsoleAppender
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+
+# define an appender named file, which is set to be a RollingFileAppender
+log4j.appender.file=org.apache.log4j.RollingFileAppender
+log4j.appender.file.File=log.txt
+
+## LAYOUTS ##
+# assign a SimpleLayout to console appender
+log4j.appender.console.layout=org.apache.log4j.SimpleLayout
+
+# assign a PatternLayout to file appender
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%t %p - %m%n

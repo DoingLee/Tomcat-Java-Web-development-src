@@ -1,0 +1,7 @@
+<html>
+<head> <title>Velocity Example</title></head>
+<body>
+<h1>Velocity Example</h1>
+<p>$a+$b=$c</p>
+</body>
+</html>

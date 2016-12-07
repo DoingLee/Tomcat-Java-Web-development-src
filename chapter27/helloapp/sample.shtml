@@ -1,0 +1,6 @@
+<html>
+<head><title>my first SSI page</title></head>
+<body>
+»¶Ó­ÄúÓÚ£¨<!--#echo var="DATE_LOCAL" -->£©·ÃÎÊ±¾ÍøÕ¾¡£
+</body>
+</html>

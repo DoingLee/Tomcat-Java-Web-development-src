@@ -1,0 +1,41 @@
+<project name="bookstore" default="compile" basedir=".">
+
+<!-- ===================== Property Definitions =========================== -->
+  <property name="tomcat.home" value="C:/tomcat" />
+  <property name="app.home"          value="." />
+ 
+  <property name="src.home"          value="${app.home}/src"/>
+  <property name="classes.home"       value="${app.home}/WEB-INF/classes"/>
+ 
+<!-- ==================== Compilation Classpath =========================== -->
+
+    <!--
+         This section creates the classpath for compilation.
+    -->
+
+  <path id="compile.classpath">
+
+    <!-- The object files for this application -->
+    <pathelement location="${classes.home}"/>
+
+    <!-- All files/jars that Tomcat makes available -->
+    <fileset dir="${tomcat.home}/lib">
+      <include name="*.jar"/>
+    </fileset>
+
+  </path>
+
+<!-- ==================== "compile" Target ================================ -->
+
+    <!--
+          This only compiles java files that are newer
+          than their corresponding .class files.
+     -->
+
+  <target name="compile"  >
+    <javac srcdir="${src.home}" destdir="${classes.home}" debug="yes" >
+        <classpath refid="compile.classpath"/>
+    </javac>
+  </target>
+
+</project>

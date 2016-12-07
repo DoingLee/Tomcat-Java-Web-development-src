@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>helloapp</title>
+</head>
+<body>
+
+DOCUMENT_NAME£º<!--#echo var="DOCUMENT_NAME" --> <br>
+DOCUMENT_URI£ºhttp://localhost:8080<!--#echo var="DOCUMENT_URI" --> <br>
+QUERY_STRING_UNESCAPED£º<!--#echo var="QUERY_STRING_UNESCAPED" --> <br>
+LAST_MODIFIED£º<!--#echo var="LAST_MODIFIED" --> <br>
+<!--#config timefmt="%A, the %d of %B, in the year %Y"  --> <br>
+DATE_LOCAL£º<!--#echo var="DATE_LOCAL"  --> <br>
+SERVER_SOFTWARE£º<!--#echo var="SERVER_SOFTWARE"  --> <br>
+SERVER_NAME£º<!--#echo var="SERVER_NAME"  --> <br>
+SERVER_PROTOCOL£º<!--#echo var="SERVER_PROTOCOL"  --> <br>
+SERVER_PORT£º<!--#echo var="SERVER_PORT"  --> <br>
+REQUEST_METHOD£º<!--#echo var="REQUEST_METHOD"  --> <br>
+REMOTE_HOST£º<!--#echo var="REMOTE_HOST"  --> <br>
+REMOTE_ADDR£º<!--#echo var="REMOTE_ADDR"  --> <br>
+
+</body>
+</html>

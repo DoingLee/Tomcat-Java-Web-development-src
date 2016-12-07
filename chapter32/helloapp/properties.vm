@@ -1,0 +1,9 @@
+<html>
+<head> <title>Velocity Example</title></head>
+<body>
+<h1>Velocity Properties Example</h1>
+<p>Clients First Name:$client.firstname</p>
+<p>Clients Last Name:$client.lastname</p>
+<p>Clients Phone Number:$client.phone</p>
+</body>
+</html>

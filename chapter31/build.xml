@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="test" default="compile" basedir=".">
+  <property name="source.root" value="."/>
+  <property name="class.root" value="."/>
+  <property name="lib.dir" value="lib"/>
+
+  <path id="project.class.path">
+     <pathelement location="${class.root}" />
+
+     <fileset dir="${lib.dir}">
+       <include name="*.jar"/>
+     </fileset>
+  </path>
+
+ <target name="compile" description="Compiles all Java classes">
+    <javac srcdir="${source.root}"
+           includes="Log4JApp.java"
+           destdir="${class.root}" >
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target> 
+</project>

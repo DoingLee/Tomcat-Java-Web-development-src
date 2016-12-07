@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>ªÓ∂Ø∞≤≈≈</title>
+</head>
+<body>
+<!--#config timefmt="%A" -->
+<!--#if expr="$DATE_LOCAL = /Monday/" -->
+<p>Meeting at 10:00 on Mondays</p>
+<!--#elif expr="$DATE_LOCAL = /Friday/" -->
+<p>Turn in your time card</p>
+<!--#else -->
+<p>Yoga class at noon.</p>
+<!--#endif --> 
+
+</body>
+</html>

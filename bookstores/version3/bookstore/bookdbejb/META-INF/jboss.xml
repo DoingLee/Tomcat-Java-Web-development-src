@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss>
+  <enterprise-beans>
+    <session>
+      <ejb-name>BookDBEJB</ejb-name>
+      <jndi-name>ejb/BookDBEJB</jndi-name>
+    </session>
+  </enterprise-beans>
+</jboss>

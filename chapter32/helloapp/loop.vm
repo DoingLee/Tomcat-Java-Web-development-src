@@ -1,0 +1,26 @@
+<html>
+<head> <title>Velocity Example</title></head>
+<body>
+<h1>Velocity Loop Example</h1>
+
+<table border=1>
+<tr>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Phone</td>
+</tr>
+
+#foreach($client in $clientlist)
+
+<tr>
+<td>$client.firstname</td>
+<td>$client.lastname</td>
+<td>$client.phone</td>
+</tr>
+
+#end
+
+</table>
+
+</body>
+</html>

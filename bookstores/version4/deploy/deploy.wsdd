@@ -1,0 +1,44 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment name="test" xmlns="http://xml.apache.org/axis/wsdd/" 
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <service name="urn:bookdbservice" provider="java:RPC">
+    <parameter name="className" value="mypack.BookDB" />
+    <parameter name="allowedMethods" 
+      value="getNumberOfBooks,getBooks,getBookDetails,buyBooks" />
+
+    <beanMapping qname="ns:BookDetails" xmlns:ns="http://soapinterop.org/xsd" 
+      languageSpecificType="java:mypack.BookDetails"/>
+    
+    <typeMapping
+        xmlns:ns="http://soapinterop.org/xsd"
+        qname="ns:BookDetailsArray"
+        type="java:mypack.BookDetails[]"
+        serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+     />
+
+ 
+    <beanMapping  qname="ns:ShoppingCartItem"  xmlns:ns="http://soapinterop.org/xsd" 
+      languageSpecificType="java:mypack.ShoppingCartItem"/>
+  
+    <typeMapping
+        xmlns:ns="http://soapinterop.org/xsd"
+        qname="ns:ShoppingCartItemArray"
+        type="java:mypack.ShoppingCartItem[]"
+        serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+        encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+    />
+
+  </service>
+
+</deployment>

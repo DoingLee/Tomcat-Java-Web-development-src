@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC
+  '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN'
+  'http://java.sun.com/j2ee/dtds/web-app_2_3.dtd'>
+
+<web-app>
+
+  <servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>mypack.DispatcherServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/dispatcher</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>login.htm </welcome-file>
+  </welcome-file-list>
+
+  <taglib>
+    <taglib-uri>/mytaglib</taglib-uri>
+    <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
+  </taglib>
+
+</web-app>

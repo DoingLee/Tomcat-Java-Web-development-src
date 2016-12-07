@@ -1,0 +1,21 @@
+<!--Access Log Valve-->
+<!--
+<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" 
+prefix="localhost_access_log." suffix=".txt" pattern="%h %l %u %t %r %s %b" resolveHosts="true" />
+-->
+
+<!--
+<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" 
+prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="true" />
+-->
+ 
+<!--Remote Address Filter-->
+<Valve className="org.apache.catalina.valves.RemoteAddrValve" 
+deny="127.* , 222.*"  />
+
+<!--Remote Host Filter-->
+<Valve className="org.apache.catalina.valves.RemoteHostValve" 
+deny="monster*"  />
+
+<!--Request Dumper-->
+<Valve className="org.apache.catalina.valves.RequestDumperValve" />

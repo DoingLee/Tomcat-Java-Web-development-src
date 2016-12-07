@@ -1,0 +1,23 @@
+<Context  reloadable="true">
+  <Manager className="org.apache.catalina.session.PersistentManager" 
+    saveOnRestart="true"
+    maxActiveSessions="10"
+    minIdleSwap="60"
+    maxIdleSwap="120"
+    maxIdleBackup="180"
+    maxInactiveInterval="300">
+
+   <Store className="org.apache.catalina.session.JDBCStore"
+     driverName="com.mysql.jdbc.Driver"
+     connectionURL="jdbc:mysql://localhost/tomcatsessionDB?user=dbuser password=1234"
+     sessionTable="tomcat_sessions"
+     sessionIdCol="session_id"
+     sessionDataCol="session_data"
+     sessionValidCol="valid_session"
+     sessionMaxInactiveCol="max_inactive"
+     sessionLastAccessedCol="last_access"
+     sessionAppCol="app_name"
+     checkInterval="60" />
+  
+  </Manager>
+</Context>
